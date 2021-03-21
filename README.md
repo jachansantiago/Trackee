@@ -6,7 +6,7 @@
 
 Notebook for efficient quick annotation of tracks in a video.
 
-[tool-image]
+[![Tool Screenshot][tool-image]]
 
 ## Download
 ```sh
