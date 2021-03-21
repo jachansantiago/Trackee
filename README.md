@@ -19,6 +19,6 @@ Kendrick G. Morales Ortiz - [Github](https://github.com/KendrickMorales)
 
 <!-- Markdown link & img dfn's -->
 [python-url]: https://www.python.org/downloads/
-[python-image]: https://upload.wikimedia.org/wikipedia/commons/a/a5/Blue_Python_3.8_Shield_Badge.svg
+[python-image]: https://www.python.org/downloads/release/python-3710/
 [tool-image]: tracking_tool.png
 [bookera-url]: https://github.com/Bookera-App
