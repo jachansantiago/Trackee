@@ -13,7 +13,10 @@ Notebook for efficient quick annotation of tracks in a video.
 git clone https://github.com/KendrickMorales/Tracking-Annotation-Tool
 ```
 ## Instructions
+To annotate a bee you must first add an ID in the "Bee ID" field of the GUI. After this all you need to do is click in the center of the desired bee to annotate and the frame will change after each click. Once done click the "Save" button and you should be set.
 
+
+## Installation 
 ## Step 1
 Install all the required modules found in the requirements.txt. Keep in mind that this tool is build using the [plotbee-url] plotting system. Make sure to download that as well.
 ```sh
