@@ -36,7 +36,7 @@ Currently the tool supports:
 4. ID Bee: Add ID wanted for bee (This is needed to for the plotting to work. Use integers)
 5. View Tracks: Plots complete tracks if view is in the first frame. Else it would plot the tracks backwards (Trajectory)
 6. Save: Allows to add annotations to the json file provided.
-![Buttons Screenshot][tool-image]
+![Buttons Screenshot][buttons-image]
 
 
 
