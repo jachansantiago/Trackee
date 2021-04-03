@@ -1,4 +1,4 @@
-# Tracking Annotation Tool
+# Trackee v1.0
 > Python tracking annotation tool
 
 [![Python Version][python-image]][python-url]
