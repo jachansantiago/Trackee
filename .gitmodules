@@ -1,0 +1,3 @@
+[submodule "plotbee"]
+	path = plotbee
+	url = https://github.com/jachansantiago/plotbee.git
