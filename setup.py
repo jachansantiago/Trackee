@@ -11,5 +11,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
+    install_requires=[f"plotbee @ file://localhost/{os.getcwd()}/plotbee#egg=plotbee", "ipywidgets"],
     python_requires='>=3.6',
 )
