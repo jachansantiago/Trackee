@@ -37,3 +37,17 @@ def create_empty_video(video_file):
         
     video = Video(frames=frames, tracks={}, config=config)
     return video
+
+def rescale(image, scale_factor=4):
+    height, width, _ = image.shape
+    width = width // scale_factor
+    height = height // scale_factor
+    dim = (width, height)
+    return cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
+
+
+def get_next_id(ids):
+    i = 0
+    while i in ids:
+        i += 1
+    return i
