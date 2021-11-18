@@ -1,0 +1,1 @@
+from trackee.controller import GUIController as GUI

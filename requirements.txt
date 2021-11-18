@@ -1,9 +1,1 @@
-numpy
-filterpy
-matplotlib
-scikit-image
-opencv-python
-tqdm
-seaborn
-pandas
-scipy
+ipywidgets
