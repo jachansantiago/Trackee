@@ -33,6 +33,7 @@ class GUIController():
         self.prev_button = widgets.Button(description = 'Prev Frame')   
         self.save_button = widgets.Button(description="Save")
         self.beeid_text = widgets.IntText(description="Bee Id:", value=self._current_id)
+        self.status_text = widgets.Label(value='')
 
     @property
     def current_id(self):
@@ -89,6 +90,7 @@ class GUIController():
     def on_click(self,event):
         coords = (event.xdata, event.ydata)
         self.add_annotation(self.frame_number, self.current_id, coords)
+        self.status_text.value = "Frame: {}, Beeid: {}, xy: {}".format(self.frame_number, self.current_id, coords)
         self.next_frame()
                     
         
@@ -101,6 +103,8 @@ class GUIController():
         filename = "tracks_{date_str}_{video_name}.json".format(date_str=date_str,video_name=video_name)
         
         self.model.save(filename)
+
+        self.status_text.value = "Annotations saved at {}".format(filename)
         
         
     def start(self):
@@ -114,7 +118,7 @@ class GUIController():
     
         id_controllers = HBox([self.beeid_text])
         frame_controllers = HBox([self.next_button, self.prev_button, self.jump_button, self.jump_text])
-        save_controllers = HBox([self.save_button])
+        save_controllers = HBox([self.save_button, self.status_text])
         box_layout = widgets.Layout(display='flex',
                         # flex_flow='row',
                         # align_items='center',
